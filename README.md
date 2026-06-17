@@ -1,45 +1,51 @@
 # 🍷 Wine Quality Prediction Using Machine Learning
 
-## 📌 Project Overview
+## Oasis Infobyte Data Analytics Internship - Level 2 Project
 
-This project focuses on predicting wine quality based on its physicochemical properties using Machine Learning techniques. The objective is to analyze various chemical characteristics of wine and build predictive models capable of estimating wine quality accurately.
+### 📌 Project Overview
 
-The project includes comprehensive Exploratory Data Analysis (EDA), feature engineering, visualization, and implementation of multiple classification algorithms.
+This project focuses on predicting wine quality based on its physicochemical properties using Machine Learning techniques. The objective is to analyze various chemical characteristics of wine and develop predictive models capable of accurately classifying wine quality.
+
+The project includes comprehensive Exploratory Data Analysis (EDA), data visualization, feature engineering, model training, and performance evaluation using multiple machine learning algorithms.
 
 ---
 
 ## 🎯 Objectives
 
-- Analyze the relationship between wine quality and chemical properties.
-- Perform data cleaning and preprocessing.
-- Visualize trends and patterns within the dataset.
-- Train multiple machine learning classification models.
-- Compare model performance and identify the best-performing algorithm.
-- Determine the most influential factors affecting wine quality.
+* Analyze the relationship between wine quality and chemical properties.
+* Perform data cleaning and preprocessing.
+* Visualize trends and patterns within the dataset.
+* Train and evaluate multiple classification models.
+* Compare model performance using standard evaluation metrics.
+* Identify the most influential features affecting wine quality.
 
 ---
 
 ## 📊 Dataset Information
 
-The dataset contains various physicochemical attributes of red wine samples.
+The dataset contains physicochemical properties of wine samples along with their quality ratings.
 
 ### Features
 
-- Fixed Acidity
-- Volatile Acidity
-- Citric Acid
-- Residual Sugar
-- Chlorides
-- Free Sulfur Dioxide
-- Total Sulfur Dioxide
-- Density
-- pH
-- Sulphates
-- Alcohol
+* Fixed Acidity
+* Volatile Acidity
+* Citric Acid
+* Residual Sugar
+* Chlorides
+* Free Sulfur Dioxide
+* Total Sulfur Dioxide
+* Density
+* pH
+* Sulphates
+* Alcohol
 
 ### Target Variable
 
-- Quality (Wine Quality Score)
+* Quality (Wine Quality Score)
+
+### Dataset Source
+
+The dataset is included in the repository under the `dataset/` folder.
 
 ---
 
@@ -47,15 +53,20 @@ The dataset contains various physicochemical attributes of red wine samples.
 
 ### Programming Language
 
-- Python
+* Python
 
 ### Libraries
 
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-Learn
+
+### Development Environment
+
+* Jupyter Notebook
+* VS Code
 
 ---
 
@@ -63,38 +74,60 @@ The dataset contains various physicochemical attributes of red wine samples.
 
 The following analyses were performed:
 
-- Dataset inspection
-- Missing value analysis
-- Duplicate record detection
-- Statistical summary
-- Quality distribution analysis
-- Correlation heatmap
-- Alcohol vs Quality analysis
-- Volatile Acidity vs Quality analysis
-- Sulphates vs Quality analysis
-- Density vs Quality analysis
-- pH vs Quality analysis
-- Pairplot visualization
+* Dataset Inspection
+* Missing Value Analysis
+* Duplicate Record Detection
+* Statistical Summary
+* Quality Distribution Analysis
+* Correlation Analysis
+* Pairplot Visualization
+* Feature Relationship Analysis
 
-### Key Insights
+### Visualizations Generated
 
-- Higher alcohol content is generally associated with better-quality wines.
-- Volatile acidity shows a negative correlation with wine quality.
-- Sulphates positively influence wine quality.
-- Most wine samples belong to quality categories 5 and 6.
-- The dataset exhibits moderate class imbalance.
+* Quality Count Plot
+* Correlation Heatmap
+* Alcohol vs Quality
+* Volatile Acidity vs Quality
+* Sulphates vs Quality
+* Density vs Quality
+* pH vs Quality
+* Pairplot Analysis
 
 ---
 
-## 🤖 Machine Learning Models Used
+## 🔍 Key Insights
+
+* Higher alcohol content is generally associated with better-quality wines.
+* Volatile acidity exhibits a negative relationship with wine quality.
+* Sulphates positively contribute to wine quality.
+* Most wine samples belong to quality categories 5 and 6.
+* Certain chemical properties have stronger predictive power than others.
+* The dataset contains moderate class imbalance across quality levels.
+
+---
+
+## ⚙️ Data Preprocessing
+
+The following preprocessing steps were applied:
+
+* Data Cleaning
+* Duplicate Removal
+* Feature Selection
+* Train-Test Split
+* Feature Scaling using StandardScaler
+
+---
+
+## 🤖 Machine Learning Models Implemented
 
 ### 1. Random Forest Classifier
 
-An ensemble learning algorithm that combines multiple decision trees to improve prediction accuracy.
+An ensemble learning algorithm that combines multiple decision trees to improve classification performance and feature interpretability.
 
 ### 2. Stochastic Gradient Descent (SGD) Classifier
 
-A linear classification model optimized using gradient descent.
+A linear classification model optimized using gradient descent for efficient training.
 
 ### 3. Support Vector Classifier (SVC)
 
@@ -102,82 +135,106 @@ A powerful classification algorithm that identifies optimal decision boundaries 
 
 ---
 
-## ⚙️ Data Preprocessing
+## 📋 Model Evaluation
 
-- Feature Selection
-- Train-Test Split
-- Feature Scaling using StandardScaler
+The models were evaluated using:
 
----
+* Accuracy Score
+* Classification Report
+* Confusion Matrix
+* Feature Importance Analysis
 
-## 📋 Model Evaluation Metrics
+### Performance Comparison
 
-The following metrics were used:
+The performance of all implemented models was compared to identify the most effective approach for wine quality prediction.
 
-- Accuracy Score
-- Classification Report
-- Confusion Matrix
-- Feature Importance Analysis
+### Best Performing Model
 
----
+🏆 **Random Forest Classifier**
 
-## 📊 Results
-
-| Model | Accuracy |
-|---------|----------|
-| Random Forest | Best Performing Model |
-| SGD Classifier | Moderate Performance |
-| Support Vector Classifier | Competitive Performance |
-
-> Random Forest achieved the highest overall accuracy and provided valuable feature importance insights.
+The Random Forest model achieved the best overall performance and provided valuable insights into feature importance.
 
 ---
 
-## 🔍 Important Features
+## 📊 Feature Importance Analysis
 
-According to the Random Forest model, the most influential features were:
+The Random Forest model was used to determine the most influential features affecting wine quality.
 
-- Alcohol
-- Volatile Acidity
-- Sulphates
-- Total Sulfur Dioxide
-- Citric Acid
+### Top Contributing Features
 
-These attributes significantly contribute to determining wine quality.
+* Alcohol
+* Volatile Acidity
+* Sulphates
+* Total Sulfur Dioxide
+* Citric Acid
+
+These features played a significant role in determining wine quality and contributed heavily to model predictions.
+
+---
+
+## 🖼 Generated Visualizations
+
+The project includes the following visualizations stored in the `images/` directory:
+
+* Correlation Heatmap
+* Pairplot
+* Quality Count Plot
+* Alcohol vs Quality
+* Volatile Acidity vs Quality
+* Sulphates vs Quality
+* Density vs Quality
+* pH vs Quality
+* Model Comparison Chart
+* Random Forest Confusion Matrix
+* Top 10 Important Features
 
 ---
 
 ## 📂 Project Structure
 
-```
-Wine-Quality-Prediction/
+```text
+pro_2_Wine_Quality_Prediction/
 │
-├── Dataset/
+├── dataset/
 │   └── WineQT.csv
 │
-├── Notebooks/
-│   ├── EDA_Wine_Quality.ipynb
+├── images/
+│   ├── heatmap.png
+│   ├── Model Comparison.png
+│   ├── pairplot.png
+│   ├── quality_label_vs_alcohol.png
+│   ├── quality_vs_alcohol.png
+│   ├── quality_count.png
+│   ├── quality_vs_density.png
+│   ├── quality_vs_ph.png
+│   ├── quality_vs_sulphates.png
+│   ├── quality_vs_volatile_acidity.png
+│   ├── Random Forest Confusion Matrix.png
+│   └── Top 10 Important Features.png
+│
+├── ml_models_prediction/
 │   └── Prediction_Wine_Quality.ipynb
 │
-├── README.md
+├── notebooks/
+│   └── EDA_Wine_Quality.ipynb
 │
-└── requirements.txt
+└── README.md
 ```
 
 ---
 
 ## 🚀 How to Run
 
-### Clone Repository
+### Clone the Repository
 
 ```bash
 git clone <repository-url>
 ```
 
-### Install Dependencies
+### Navigate to the Project Directory
 
 ```bash
-pip install -r requirements.txt
+cd pro_2_Wine_Quality_Prediction
 ```
 
 ### Launch Jupyter Notebook
@@ -188,30 +245,42 @@ jupyter notebook
 
 Open:
 
-- EDA_Wine_Quality.ipynb
-- Prediction_Wine_Quality.ipynb
+* `notebooks/EDA_Wine_Quality.ipynb`
+* `ml_models_prediction/Prediction_Wine_Quality.ipynb`
 
 ---
 
 ## 🎓 Learning Outcomes
 
-Through this project, the following concepts were explored:
+This project helped develop practical skills in:
 
-- Exploratory Data Analysis (EDA)
-- Data Visualization
-- Feature Scaling
-- Classification Algorithms
-- Model Evaluation
-- Feature Importance Analysis
-- Machine Learning Workflow
+* Exploratory Data Analysis (EDA)
+* Data Visualization
+* Feature Engineering
+* Data Preprocessing
+* Classification Algorithms
+* Model Evaluation
+* Feature Importance Analysis
+* End-to-End Machine Learning Workflow
 
 ---
 
 ## 📜 Conclusion
 
-This project demonstrates how machine learning can be applied to predict wine quality using chemical properties. Among the evaluated models, the Random Forest Classifier delivered the best performance and provided meaningful insights into the factors influencing wine quality.
+This project demonstrates the practical application of machine learning techniques in predicting wine quality using physicochemical properties.
 
-The findings can assist wine producers in understanding quality indicators and support data-driven decision-making in wine production.
+Through extensive exploratory analysis and model comparison, the Random Forest Classifier emerged as the best-performing model. The study highlights the importance of chemical attributes such as alcohol content, sulphates, and volatile acidity in determining wine quality.
+
+The insights gained from this analysis can assist wine producers in understanding quality indicators and support data-driven decision-making in wine production processes.
+
+---
+
+## Internship Information
+
+**Organization:** Oasis Infobyte
+**Domain:** Data Analytics
+**Project Level:** Level 2
+**Project Title:** Wine Quality Prediction
 
 ---
 
@@ -219,10 +288,10 @@ The findings can assist wine producers in understanding quality indicators and s
 
 **Kushagra Pandey**
 
-Machine Learning Enthusiast | Python Developer | Data Science Learner
+B.Tech Computer Science & Engineering
+Jaypee Institute of Information Technology (JIIT), Noida
 
----
+### Connect With Me
 
-### Internship Project
-
-Completed as part of the **Oasis Infobyte Data Science Internship Program**.
+* GitHub: https://github.com/Kushagra9027
+* LinkedIn: Add Your LinkedIn Profile Link Here
